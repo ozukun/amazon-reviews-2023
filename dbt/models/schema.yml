@@ -1,0 +1,22 @@
+models:
+  - name: cleaned_reviews
+    description: "Cleaned Amazon reviews data with standardized fields."
+    columns:
+      - name: review_id
+        description: "Unique identifier for each review."
+      - name: review_text
+        description: "Lowercased and cleaned review text."
+      - name: rating
+        description: "Rating of the review."
+      - name: review_date
+        description: "Standardized review date."
+
+  - name: aggregated_reviews
+    description: "Aggregated review data by rating."
+    columns:
+      - name: rating
+        description: "Rating of the reviews (1-5)."
+      - name: review_count
+        description: "Number of reviews for each rating."
+      - name: avg_review_length
+        description: "Average length of the review text for each rating."
